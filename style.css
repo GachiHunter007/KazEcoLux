@@ -21,7 +21,7 @@ body {
   display: flex;
   margin-top: 20px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .sub-menu__list.open {
@@ -30,16 +30,11 @@ body {
 
 .arrow.active {
   -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 body.mouse .menu__list > li:hover .sub-menu__list {
   display: block;
-}
-
-#header_h1 {
-  text-align: center;
-  color: white;
 }
 
 body.touch .arrow {
@@ -75,8 +70,8 @@ body.touch .arrow {
 
 .sub-menu__list {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   display: none;
   position: absolute;
   padding-top: 10px;
@@ -87,7 +82,7 @@ body.touch .arrow {
 
 .arrow {
   -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
   display: none;
   width: 0;
   height: 0;
@@ -105,30 +100,30 @@ body.touch .arrow {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
 .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  border: 5px solid #5e5373;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-top: 1px solid black;
 }
 
 .footer_info {
-  background-color: #18b5a4;
-  padding-left: 20px;
-  color: white;
-  font-size: calc(16px + 0.5208333333vw);
+  text-align: right;
+  color: green;
+  font-size: calc(9px + 0.5208333333vw);
 }
+
 .footer_info ul li {
   list-style: none;
 }
@@ -141,4 +136,22 @@ body.touch .arrow {
 .footer_img {
   max-height: 50px;
   padding-left: 15px;
+}
+
+.description_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.description_container img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.text_description {
+  max-width: 500px;
+}
+.text_description p {
+  padding-top: 10px;
+  font-size: calc(9px + 0.5208333333vw);
 }
