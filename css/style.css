@@ -1,4 +1,4 @@
-*,*:before,*:after{
+/* *,*:before,*:after{
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -43,4 +43,34 @@ html,body{
 	font-size: 18px;
 	padding-top: 17px;
 	
+}*/
+*,*:before,*:after{
+    margin: 0;
+    box-sizing: border-box;
+}
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+}
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+.footer {
+	padding: 20px;
+	margin-top:auto ;
+	text-align: right;
+	color: #006600;
+}
+.hr{
+	background-color: #009933;
+	padding: 1.25px;
+	margin-bottom:10px ;
+}
+.img{
+	position: relative;
 }
