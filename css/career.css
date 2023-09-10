@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu__link {
+  font-size: calc(12px + 0.5208333333vw);
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.sub-menu__list.open {
+  display: block;
+}
+
+.arrow.active {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+body.mouse .menu__list > li:hover .sub-menu__list {
+  display: block;
+}
+
+body.touch .arrow {
+  display: block;
+}
+
+.menu li {
+  list-style: none;
+  position: relative;
+}
+
+.menu a.parent {
+  margin-left: 30px;
+}
+
+.menu__list > li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sub-menu__link {
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 17px;
+  font-size: calc(16px + 0.2604166667vw);
+}
+
+.sub-menu__list > li {
+  background-color: #70ac48;
+  min-width: 150px;
+}
+
+.sub-menu__list {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  left: 0;
+  top: 20px;
+  color: white;
+}
+
+.arrow {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  display: none;
+  width: 0;
+  height: 0;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-top: 1px solid black;
+}
+
+.footer_info {
+  text-align: right;
+  color: green;
+  font-size: calc(9px + 0.5208333333vw);
+}
+
+.footer_info ul li {
+  list-style: none;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_img {
+  max-height: 50px;
+  padding-left: 15px;
+}
+
+.description_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.description_container img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.text_description {
+  max-width: 500px;
+}
+.text_description p {
+  padding-top: 10px;
+  font-size: calc(9px + 0.5208333333vw);
+}
