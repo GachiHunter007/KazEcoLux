@@ -110,6 +110,9 @@ body.touch .arrow {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
 }
 
 .footer {
@@ -140,9 +143,19 @@ body.touch .arrow {
 }
 
 .description_container {
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.description_container div {
+  padding-right: 20px;
 }
 
 .text_description {
@@ -150,5 +163,25 @@ body.touch .arrow {
 }
 .text_description p {
   padding-top: 10px;
-  font-size: calc(9px + 0.5208333333vw);
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .content {
+    max-width: 750px;
+  }
+  .description_container {
+    display: block;
+  }
+  .description_container iframe {
+    padding-top: 0px;
+    width: 800px;
+    height: 650px;
+  }
+  .description_container p {
+    font-size: 30px;
+  }
+  .footer_info {
+    font-size: 30px;
+  }
 }
