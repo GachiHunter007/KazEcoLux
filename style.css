@@ -13,7 +13,6 @@ body {
   font-size: calc(12px + 0.5208333333vw);
   color: green;
   font-weight: bold;
-  text-decoration: none;
 }
 
 .menu__list {
@@ -62,7 +61,6 @@ body.touch .arrow {
   padding: 5px 10px;
   font-size: 17px;
   font-size: calc(16px + 0.2604166667vw);
-  text-decoration: none;
 }
 
 .sub-menu__list > li {
@@ -148,49 +146,16 @@ body.touch .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 100px;
-  margin-left: 88px;
-  padding: 20px;
 }
-.description_certificates{
- display: flex;
-  max-width: 1200px;
-  margin: 0px auto;
-  padding: 0px 15px;
-}
-.description_certificates div{
-  overflow: hidden;
-  max-width: 350px;
-  padding-left: 35px;
-}
-.description_companies {
-  display: flex;
-  max-width: 1200px;
-  margin: 0px auto;
-  padding: 0px 15px;
-}
-
 .description_container img {
-  width: 700px;
+  width: 500px;
   border-radius: 5px;
-  
 }
 
 .text_description {
-  max-width: 700px;
-
+  max-width: 500px;
 }
 .text_description p {
-  padding: 10px;
-  font-size: calc(15px + 0.5208333333vw);
-  
-}
-.text_description ul {
-  padding: 10px;
-  font-size: calc(15px + 0.5208333333vw);
-}
-.text_description ul li {
-  padding: 8px;
-  font-size: calc(15px + 0.5208333333vw);
-  list-style: none;
+  padding-top: 10px;
+  font-size: calc(9px + 0.5208333333vw);
 }
