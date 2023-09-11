@@ -121,6 +121,10 @@ body.touch .arrow {
 .hr {
   background-color: green;
   padding: 1.25px;
+}
+.hr2 {
+  background-color: green;
+  padding: 1px;
   margin-bottom: 8px;
 }
 .footer_info {
@@ -164,16 +168,29 @@ body.touch .arrow {
   padding-left: 35px;
 }
 .description_companies {
-  display: flex;
+  
   max-width: 1200px;
   margin: 0px auto;
   padding: 0px 15px;
+  max-height: 600px;
+}
+.description_items {
+  display: flex;
+  justify-content:space-between;
+  
+}
+.sub_description_companies{
+  display: flex;
+}
+.img{
+  max-width: 100px;
+  max-height: 100px;
+  padding-inline: 120px;
 }
 
 .description_container img {
   width: 700px;
-  border-radius: 5px;
-  
+  border-radius: 5px; 
 }
 
 .text_description {
@@ -183,7 +200,6 @@ body.touch .arrow {
 .text_description p {
   padding: 10px;
   font-size: calc(15px + 0.5208333333vw);
-  
 }
 .text_description ul {
   padding: 10px;
@@ -193,4 +209,12 @@ body.touch .arrow {
   padding: 8px;
   font-size: calc(15px + 0.5208333333vw);
   list-style: none;
+  text-align: center;
+}
+.h2 {
+  padding: 10px;
+  vertical-align: middle;
+}
+.span{
+  text-decoration: underline;
 }
